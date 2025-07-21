@@ -1,0 +1,264 @@
+{
+  "model_name": "Ridge",
+  "training_date": "2025-07-20T11:09:11.388379",
+  "feature_names": [
+    "Years of Experience",
+    "Age",
+    "Gender",
+    "Education Level",
+    "Job Title"
+  ],
+  "numerical_features": [
+    "Years of Experience"
+  ],
+  "categorical_features": [
+    "Age",
+    "Gender",
+    "Education Level",
+    "Job Title"
+  ],
+  "model_results": {
+    "RandomForest": {
+      "best_params": {
+        "regressor__max_depth": null,
+        "regressor__max_features": 0.8,
+        "regressor__min_samples_leaf": 5,
+        "regressor__min_samples_split": 10,
+        "regressor__n_estimators": 100
+      },
+      "train_r2": 0.8426448238354232,
+      "val_r2": 0.7770055814034158,
+      "test_r2": 0.7563473968575639,
+      "train_rmse": 16248.175126422297,
+      "val_rmse": 19383.8250238844,
+      "test_rmse": 19770.16655521438,
+      "train_mae": 11737.444866167614,
+      "val_mae": 14754.395740671283,
+      "test_mae": 14285.760911013114,
+      "cv_mean": 0.7668380697637138,
+      "cv_std": 0.02496733993572922,
+      "train_val_gap": 0.06563924243200736,
+      "train_test_gap": 0.08629742697785925,
+      "generalization_score": 0.7563473968575639
+    },
+    "GradientBoosting": {
+      "best_params": {
+        "regressor__learning_rate": 0.1,
+        "regressor__max_depth": 5,
+        "regressor__min_samples_split": 20,
+        "regressor__n_estimators": 150,
+        "regressor__subsample": 0.9
+      },
+      "train_r2": 0.973039998521387,
+      "val_r2": 0.9355875136660206,
+      "test_r2": 0.8968291503604375,
+      "train_rmse": 6725.49153540664,
+      "val_rmse": 10417.83598912687,
+      "test_rmse": 12864.807845642663,
+      "train_mae": 5171.615575837123,
+      "val_mae": 8107.72730383206,
+      "test_mae": 9818.953851973198,
+      "cv_mean": 0.9085040021956263,
+      "cv_std": 0.018277686908390742,
+      "train_val_gap": 0.03745248485536645,
+      "train_test_gap": 0.07621084816094947,
+      "generalization_score": 0.8968291503604375
+    },
+    "ElasticNet": {
+      "best_params": {
+        "regressor__alpha": 0.1,
+        "regressor__l1_ratio": 0.9
+      },
+      "train_r2": 0.9018029344471522,
+      "val_r2": 0.8892781260488908,
+      "test_r2": 0.8902245065293967,
+      "train_rmse": 12835.515914428357,
+      "val_rmse": 13658.69470886001,
+      "test_rmse": 13270.200945474033,
+      "train_mae": 9970.627951334496,
+      "val_mae": 10740.921611976453,
+      "test_mae": 9892.66377002668,
+      "cv_mean": 0.8898003951978793,
+      "cv_std": 0.014229890808812241,
+      "train_val_gap": 0.012524808398261422,
+      "train_test_gap": 0.01157842791775554,
+      "generalization_score": 0.8892781260488908
+    },
+    "Ridge": {
+      "best_params": {
+        "regressor__alpha": 0.1
+      },
+      "train_r2": 0.9419532557509165,
+      "val_r2": 0.9324339965602405,
+      "test_r2": 0.9252101576219977,
+      "train_rmse": 9868.54231196778,
+      "val_rmse": 10669.80788344873,
+      "test_rmse": 10953.328410904454,
+      "train_mae": 7741.443415695107,
+      "val_mae": 8604.919983017047,
+      "test_mae": 8453.902688029793,
+      "cv_mean": 0.9322854702712409,
+      "cv_std": 0.011156884132525162,
+      "train_val_gap": 0.009519259190675977,
+      "train_test_gap": 0.016743098128918832,
+      "generalization_score": 0.9252101576219977
+    }
+  },
+  "final_metrics": {
+    "train_r2": 0.9400437174071825,
+    "test_r2": 0.9252101576219977,
+    "train_rmse": 10033.915583879487,
+    "test_rmse": 10953.328410904454,
+    "train_mae": 7914.1387291594965,
+    "test_mae": 8453.902688029793,
+    "generalization_gap": 0.014833559785184858
+  },
+  "preprocessing_info": {
+    "salary_range": [
+      67247.35777744681,
+      234803.39950792427
+    ],
+    "salary_mean": 135375.47547084317,
+    "salary_std": 40818.42160816277,
+    "salary_median": 129778.63766499738,
+    "skewness": 0.45964429448624095,
+    "total_samples": 900,
+    "feature_stats": {
+      "Age": {
+        "type": "categorical",
+        "unique_values": [
+          "38",
+          "33",
+          "47",
+          "41",
+          "31",
+          "39",
+          "36",
+          "22",
+          "30",
+          "26",
+          "27",
+          "23",
+          "46",
+          "35",
+          "25",
+          "32",
+          "49",
+          "34",
+          "24",
+          "40",
+          "29",
+          "43",
+          "37",
+          "42",
+          "45",
+          "28",
+          "50",
+          "54",
+          "52",
+          "44",
+          "56",
+          "65",
+          "53",
+          "51",
+          "48",
+          "55"
+        ],
+        "value_counts": {
+          "30": 58,
+          "35": 56,
+          "36": 55,
+          "37": 51,
+          "34": 50,
+          "33": 44,
+          "40": 44,
+          "31": 43,
+          "39": 43,
+          "22": 41,
+          "41": 39,
+          "28": 37,
+          "38": 37,
+          "32": 35,
+          "29": 33,
+          "27": 29,
+          "43": 23,
+          "26": 23,
+          "42": 18,
+          "25": 17,
+          "47": 17,
+          "23": 16,
+          "45": 14,
+          "44": 14,
+          "24": 13,
+          "46": 13,
+          "49": 11,
+          "50": 5,
+          "52": 5,
+          "48": 5,
+          "51": 3,
+          "55": 3,
+          "53": 2,
+          "54": 1,
+          "56": 1,
+          "65": 1
+        }
+      },
+      "Gender": {
+        "type": "categorical",
+        "unique_values": [
+          "Male",
+          "Female"
+        ],
+        "value_counts": {
+          "Male": 533,
+          "Female": 367
+        }
+      },
+      "Education Level": {
+        "type": "categorical",
+        "unique_values": [
+          "Bachelor's",
+          "Master's",
+          "PhD",
+          "High School"
+        ],
+        "value_counts": {
+          "Bachelor's": 482,
+          "Master's": 266,
+          "PhD": 78,
+          "High School": 74
+        }
+      },
+      "Job Title": {
+        "type": "categorical",
+        "unique_values": [
+          "Developer",
+          "Consultant",
+          "Software Engineer",
+          "Director",
+          "Manager",
+          "Analyst",
+          "Senior Engineer",
+          "Data Scientist"
+        ],
+        "value_counts": {
+          "Software Engineer": 230,
+          "Data Scientist": 154,
+          "Manager": 141,
+          "Senior Engineer": 91,
+          "Consultant": 84,
+          "Developer": 82,
+          "Analyst": 73,
+          "Director": 45
+        }
+      },
+      "Years of Experience": {
+        "type": "numerical",
+        "mean": 10.82393483893149,
+        "std": 6.911108334738775,
+        "min": 0.0,
+        "max": 39.25042325681306
+      }
+    }
+  }
+}

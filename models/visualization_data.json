@@ -1,0 +1,48 @@
+{
+  "eda": {
+    "salary_stats": {
+      "mean": 135375.47547084317,
+      "median": 129778.63766499738,
+      "std": 40818.42160816277,
+      "min": 67247.35777744681,
+      "max": 234803.39950792427
+    },
+    "gender_salary": {
+      "Female": 136685.91751174929,
+      "Male": 134473.1635965232
+    },
+    "education_salary": {
+      "PhD": 166076.11741725227,
+      "Master's": 149206.1660288711,
+      "Bachelor's": 127050.29272853052,
+      "High School": 107525.80414029377
+    },
+    "job_salary": {
+      "Director": 163355.949933324,
+      "Senior Engineer": 155368.78355279999,
+      "Manager": 143665.9581451935,
+      "Data Scientist": 136777.359261568,
+      "Software Engineer": 130150.285442094,
+      "Developer": 125579.62794723701,
+      "Consultant": 123740.83138070331,
+      "Analyst": 115087.84204611761
+    },
+    "correlation_matrix": {
+      "Age": {
+        "Age": 1.0,
+        "Years of Experience": 0.9885887936760164,
+        "Salary": 0.6449112096535669
+      },
+      "Years of Experience": {
+        "Age": 0.9885887936760164,
+        "Years of Experience": 1.0,
+        "Salary": 0.6421219686897537
+      },
+      "Salary": {
+        "Age": 0.6449112096535669,
+        "Years of Experience": 0.6421219686897537,
+        "Salary": 1.0
+      }
+    }
+  }
+}
